@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">intelligent_library</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">設定</string>
+    <string name="action_login">登入</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signin">Ok</string>
+    <string name="cancel">cancel</string>
+    <string name="clear">clear</string>
+
+    <string name="menu_home">首頁</string>
+    <string name="menu_borrow">借閱書籍</string>
+    <string name="menu_returnbook">歸還書籍</string>
+    <string name="menu_activity">活動資訊</string>
+
+    <string-array name="menu_array">
+        <item>文學小說</item>
+        <item>童話故事書</item>
+        <item>世界經典文學</item>
+    </string-array>
+</resources>

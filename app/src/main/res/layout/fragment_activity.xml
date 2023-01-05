@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ActivityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="活動資訊"
+                android:textSize="34sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="【2023】水彩繪畫課程，歡迎各位報名參加！"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="251dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image1" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="15sp"
+                    android:text="2023年首發活動！免費的水彩課程還不來報名參加嗎？ \n \n高科圖書館在新的一年所舉辦的繪畫課程，讓民眾們在連假裡能與親朋好友一起相約至此；希望能藉由此活動，能為民眾們帶來美好的經驗與回憶。　\n \n 活動日期：2023/01/01 - 2023/01/02 \n \n 活動地點：高雄科技大學第一校區活動中心2F \n \n 活動對象：高科在校生、教職員 \n \n 活動辦法：沒有辦法 \n \n 活動相關注意事項： \n \n (一) 沒有這項活動，純屬期末專案 \n \n (二) 有問題請撥打
+0974141477" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
