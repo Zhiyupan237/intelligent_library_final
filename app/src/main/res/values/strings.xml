@@ -12,6 +12,8 @@
     <string name="signin">Ok</string>
     <string name="cancel">cancel</string>
     <string name="clear">clear</string>
+    <string name="borrow">借閱</string>
+    <string name="cancelborrow">取消借閱</string>
 
     <string name="menu_home">首頁</string>
     <string name="menu_borrow">借閱書籍</string>

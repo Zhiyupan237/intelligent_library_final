@@ -8,12 +8,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
+import com.example.intelligent_library.BorrowDialogFragment;
 import com.example.intelligent_library.R;
 import com.example.intelligent_library.databinding.FragmentBorrowBinding;
 
@@ -28,6 +28,14 @@ public class BorrowFragment extends Fragment {
 
         dropdown = root.findViewById(R.id.spinner);
         initspinnerfooter(root);
+        int id = getResources().getIdentifier("button1", "id", getContext().getPackageName());
+        View eventView = root.findViewById(id);
+        eventView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                borrow();
+            }
+        });
         return root;
     }
 
@@ -60,6 +68,7 @@ public class BorrowFragment extends Fragment {
                         img7.setImageResource(R.drawable.a7);
                         img8.setImageResource(R.drawable.a8);
                         img9.setImageResource(R.drawable.a9);
+
                         break;
                     case 1:
                         img1.setImageResource(R.drawable.b1);
@@ -86,11 +95,12 @@ public class BorrowFragment extends Fragment {
                 }
             }
 
-
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                // TODO Auto-generated method stub
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
+
+
         });
     }
 
@@ -100,4 +110,10 @@ public class BorrowFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+    public void borrow() {
+        DialogFragment newFragment = new BorrowDialogFragment();
+        newFragment.show(getParentFragmentManager(), "Borrow");
+    }
+
 }
