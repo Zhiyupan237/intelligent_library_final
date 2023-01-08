@@ -8,10 +8,12 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/baseline_home_black_24"
             android:title="@string/menu_home" />
+
         <item
-            android:id="@+id/nav_borrow"
+            android:id="@+id/nav_borrow_final"
             android:icon="@drawable/baseline_menu_book_black_24"
             android:title="@string/menu_borrow" />
+
         <item
             android:id="@+id/nav_returnbook"
             android:icon="@drawable/baseline_keyboard_return_black_24"
@@ -20,5 +22,10 @@
             android:id="@+id/nav_activity"
             android:icon="@drawable/baseline_celebration_black_24"
             android:title="@string/menu_activity" />
+
+        <item
+            android:id="@+id/nav_person"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_person" />
     </group>
 </menu>
