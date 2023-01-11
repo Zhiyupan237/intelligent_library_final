@@ -78,14 +78,6 @@
                     android:text="歸還書籍"
                     android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="120dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="註冊帳號"
-                    android:textSize="20sp"/>
             </LinearLayout>
 
             <TextView
